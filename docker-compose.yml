@@ -1,1 +1,14 @@
-
+version: '2'
+services:
+    flask-app:
+        build : ./app
+        ports:
+            - 5001:5001
+    db:
+        image: mariadb 
+        environment:
+            MYSQL_ROOT_PASSWORD: example
+        volumes:
+            - ./db:/var/lib/mysql
+        ports:
+            - 3036:3306

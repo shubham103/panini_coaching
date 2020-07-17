@@ -1,9 +1,3 @@
 # panini_coaching
 
-Website for panini coaching classes
-Technologies am going to use:
-  - Flask
-  - mySql
-  - Docker (for testing)
-  - js
-  
+in this website i have written a docker-compose file, in which i have used two services one for flask application and another for mariadb database.
